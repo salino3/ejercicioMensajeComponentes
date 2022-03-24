@@ -1,0 +1,17 @@
+<p>parent works!</p>
+
+<div class="form-group">
+    <input type="text" class="form-control" 
+    name="post" [(ngModel)]="post" >
+</div>
+
+<div>
+    <button  class="btn-warnig bt-sm" type="submit"  (click)="AddPost(post)"  >clika</button>
+</div>
+
+
+
+
+<app-hijo name="fromchild" [(ngModel)]="post" [childPosts]="parentPosts" (click)="PassEvent()"   ></app-hijo>
+
+
